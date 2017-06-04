@@ -83,7 +83,7 @@ class AchievementView : RelativeLayout {
             attributes.textColorSecondLine = typedArray.getColor(R.styleable.AchievementView_textColorSecondLine,
                     ContextCompat.getColor(context, R.color.white))
 
-            attributes.drawableLeft = typedArray.getResourceId(R.styleable.AchievementView_drawableLeft, R.drawable.trophy)
+            attributes.drawableLeft = typedArray.getResourceId(R.styleable.AchievementView_drawableLeft, -1)
 
             attributes.textSizeFirstLine = typedArray.getDimensionPixelSize(R.styleable.AchievementView_textSizeFirstLine,
                     AchievementViewAttributes.DEFAULT_TEXT_SIZE.toInt()).toFloat()
@@ -110,7 +110,9 @@ class AchievementView : RelativeLayout {
         secondLineTextView = findViewById(R.id.achievement_tv_second_line) as TextView
 
         // Set the left drawable
-        (findViewById(R.id.img_trophy) as ImageView).setImageResource(attributes.drawableLeft)
+        if (attributes.drawableLeft != -1) {
+            (findViewById(R.id.img_trophy) as ImageView).setImageResource(attributes.drawableLeft)
+        }
 
         // Set left part background color
         (findViewById(R.id.achievement_left_relative_layout) as RelativeLayout).setShapeColor(attributes.colorLeft)
@@ -138,7 +140,11 @@ class AchievementView : RelativeLayout {
         isStarted = false
     }
 
-    fun show(firstLine: String, secondLine: String? = null) {
+    fun show(firstLine: String) {
+        show(firstLine, null)
+    }
+
+    fun show(firstLine: String, secondLine: String?) {
 
         if (isAnimationStarted()) {
             return

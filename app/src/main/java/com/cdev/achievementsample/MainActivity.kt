@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         findViewById(R.id.btn_start_animation).setOnClickListener {
             achievementViewBlue.show("Congratulations", "You just got a hacker badge!")
-            achievementViewGreen.show("Achievement unlocked!", "Level 1 Human")
+            achievementViewGreen.show("Achievement unlocked!")
         }
 
         findViewById(R.id.btn_clear_animation).setOnClickListener {

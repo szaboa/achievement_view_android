@@ -23,7 +23,6 @@
         android:layout_height="60dp"
         android:layout_centerInParent="true"
         custom:collapseStartDelay="3000"
-        custom:rightPartWidth="200dp"
         custom:textSizeFirstLine="10sp"
         custom:textSizeSecondLine="8sp" />
 
