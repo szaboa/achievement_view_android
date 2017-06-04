@@ -11,7 +11,7 @@ feel free to customize as you wish!
 You can import the ```achievementview``` module into your project or just grab it via Gradle,
 
 ```java
-compile 'com.cdev.android:achievement-view:0.9'
+compile 'com.cdev.android:achievement-view:0.9.1'
 ```
 
 ## Usage
