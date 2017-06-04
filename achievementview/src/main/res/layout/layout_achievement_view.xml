@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/achievement_left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:minWidth="50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/achievement_left_relative_layout"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_achievement_rectangle_left">
+
+            <ImageView
+                android:id="@+id/img_trophy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:padding="4dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/achievement_right_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_achievement_rectangle_right"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/achievement_tv_first_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/achievement_tv_second_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/achievement_tv_first_line"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

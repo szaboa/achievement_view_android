@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AchievementView">
+        <attr name="revealDuration" format="integer" />
+        <attr name="expandDuration" format="integer" />
+        <attr name="collapseStartDelay" format="integer" />
+        <attr name="concealStartDelay" format="integer" />
+        <attr name="colorLeft" format="color" />
+        <attr name="colorRight" format="color" />
+        <attr name="textColorFirstLine" format="color" />
+        <attr name="textColorSecondLine" format="color" />
+        <attr name="firstLine" format="string" />
+        <attr name="secondLine" format="string" />
+        <attr name="drawableLeft" format="reference" />
+        <attr name="rightPartWidth" format="dimension" />
+        <attr name="textSizeFirstLine" format="dimension" />
+        <attr name="textSizeSecondLine" format="dimension" />
+    </declare-styleable>
+</resources>
