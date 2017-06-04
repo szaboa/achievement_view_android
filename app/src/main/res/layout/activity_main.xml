@@ -20,11 +20,12 @@
     <com.cdev.achievementview.AchievementView
         android:id="@+id/achievement_view"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_centerInParent="true"
         custom:collapseStartDelay="3000"
         custom:textSizeFirstLine="10sp"
-        custom:textSizeSecondLine="8sp" />
+        custom:textSizeSecondLine="8sp"
+        custom:drawableLeft="@drawable/trophy"/>
 
     <com.cdev.achievementview.AchievementView
         android:id="@+id/achievement_view_green"

@@ -49,15 +49,20 @@ class AchievementView : RelativeLayout {
         initView()
     }
 
+    /**
+     * Initialize the custom attributes
+     */
     private fun initAttributes() {
         attributes = AchievementViewAttributes()
         attributes.colorLeft = R.color.achievement_color_left
         attributes.colorRight = R.color.achievement_color_right
         attributes.textColorFirstLine = R.color.white
         attributes.textColorSecondLine = R.color.white
-        attributes.drawableLeft = R.drawable.trophy
     }
 
+    /**
+     * Initialize the custom attributes
+     */
     private fun initAttributes(attrs: AttributeSet?) {
         attributes = AchievementViewAttributes()
 
@@ -99,6 +104,9 @@ class AchievementView : RelativeLayout {
         }
     }
 
+    /**
+     * Initialize the view
+     */
     private fun initView() {
         View.inflate(context, R.layout.layout_achievement_view, this)
         visibility = View.INVISIBLE
@@ -129,21 +137,16 @@ class AchievementView : RelativeLayout {
         secondLineTextView.textSize = attributes.textSizeSecondLine
     }
 
-    override fun clearAnimation() {
-        this.visibility = View.INVISIBLE
-
-        expandValueAnimator?.cancel()
-        collapseValueAnimator?.cancel()
-        revealAnimator?.cancel()
-        concealAnimator?.cancel()
-
-        isStarted = false
-    }
-
+    /**
+     * Show the view and start the animation flow
+     */
     fun show(firstLine: String) {
         show(firstLine, null)
     }
 
+    /**
+     * Show the view and start the animation flow
+     */
     fun show(firstLine: String, secondLine: String?) {
 
         if (isAnimationStarted()) {
@@ -218,6 +221,9 @@ class AchievementView : RelativeLayout {
         expandValueAnimator?.start()
     }
 
+    /**
+     * Fade in the two text views
+     */
     private fun showText() {
         val fadeIn: AlphaAnimation = AlphaAnimation(0.0f, 1.0f)
 
@@ -257,6 +263,9 @@ class AchievementView : RelativeLayout {
         collapseValueAnimator?.start()
     }
 
+    /**
+     * Fade out the two text views
+     */
     private fun hideText() {
         val fadeOut: AlphaAnimation = AlphaAnimation(1.0f, 0.0f)
 
@@ -286,5 +295,19 @@ class AchievementView : RelativeLayout {
             isStarted = false
         }
         concealAnimator?.start()
+    }
+
+    /**
+     * Clear all ongoing animations and hide the view
+     */
+    override fun clearAnimation() {
+        this.visibility = View.INVISIBLE
+
+        expandValueAnimator?.cancel()
+        collapseValueAnimator?.cancel()
+        revealAnimator?.cancel()
+        concealAnimator?.cancel()
+
+        isStarted = false
     }
 }

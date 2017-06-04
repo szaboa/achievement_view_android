@@ -1,7 +1,7 @@
 package com.cdev.achievementsample
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import com.cdev.achievementview.AchievementView
 
 class MainActivity : AppCompatActivity() {
@@ -25,5 +25,11 @@ class MainActivity : AppCompatActivity() {
             achievementViewBlue.clearAnimation()
             achievementViewGreen.clearAnimation()
         }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        achievementViewBlue.clearAnimation()
+        achievementViewGreen.clearAnimation()
     }
 }
