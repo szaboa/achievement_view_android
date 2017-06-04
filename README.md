@@ -52,6 +52,10 @@ achievementView.show("Single line text")
 // show the achievement with two lines
 achievementView.show("First line", "Second line")
 ```
+**3. Clear animation**
+
+You need to call ```clearAnimation()``` to cancel any ongoing animation when you intend to,
+also consider to call it in ```onPause()``` or ```onStop()```.
 
 ## Customize
 The following attributes can be changed,
