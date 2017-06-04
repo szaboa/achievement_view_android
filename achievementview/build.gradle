@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android'
 ext {
     PUBLISH_GROUP_ID = 'com.cdev.android'
     PUBLISH_ARTIFACT_ID = 'achievement-view'
-    PUBLISH_VERSION = '0.9'
+    PUBLISH_VERSION = '0.9.1'
 }
 
 android {
