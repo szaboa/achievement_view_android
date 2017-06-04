@@ -17,7 +17,7 @@
         android:layout_alignParentEnd="true"
         android:text="Clear" />
 
-    <com.cdev.achievementview.view.AchievementView
+    <com.cdev.achievementview.AchievementView
         android:id="@+id/achievement_view"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -27,7 +27,7 @@
         custom:textSizeFirstLine="10sp"
         custom:textSizeSecondLine="8sp" />
 
-    <com.cdev.achievementview.view.AchievementView
+    <com.cdev.achievementview.AchievementView
         android:id="@+id/achievement_view_green"
         android:layout_width="match_parent"
         android:layout_height="50dp"
