@@ -60,7 +60,7 @@ also consider to call it in ```onPause()``` or ```onStop()```.
 ## Customize
 The following attributes can be changed,
 ```xml
-custom:rightPartWidth="250dp"                   // default 300 pixel
+custom:rightPartWidth="250dp"                   // default 300 dp
 custom:revealDuration="300"                     // default 500 ms
 custom:concealStartDelay="1000"                 // default 500 ms
 custom:expandDuration="300"                     // default 500 ms
