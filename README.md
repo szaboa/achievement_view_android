@@ -1,7 +1,7 @@
 # AchievementView for Android
 A custom view for achievements pop-ups written in Kotlin.
 
-The basic properties can be changed through XML like it's size, color, drawable, duration. If this isn't enough then
+The basic properties can be changed through XML like its size, color, drawable, duration. If this isn't enough then
 feel free to customize as you wish!
 
 ![gif](https://github.com/szaboa/AchievementView/blob/master/art/output.gif)
